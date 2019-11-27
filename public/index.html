@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/NIM_Web_SDK_v6.10.0.js"></script>
+    <!--1. 引入IM脚本SDK-->
+    <script src="js/NIM_Web_WebRTC_v6.10.0.js"></script>
+    <!--2. 引入音视频脚本SDK  通过NIM.use(webRTC)来加载实时音视频插件-->
+    <script src="js/NIM_Web_NIM_v6.10.0.js"></script>
+    <script src="js/NIM_Web_Netcall_v6.10.0.js"></script>
+    <title><%= webpackConfig.name %></title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= webpackConfig.name %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
+<script type="text/javascript">
+  // console.log(returnCitySN["cip"]);
+</script>
